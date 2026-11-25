@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PM Web Solutions | Tell Your Idea Us Now & Scale It With Us</title>
+    <meta name="description" content="Startup launch karna hai ya business grow karna hai? Book 1-on-1 CTO Scaling Session with PM Web Solutions @ Just ₹499. Already scaled 50+ brands." />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '2388637345289971');
+      fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                pink: '#ff007f',
+                dark: '#0a0e27',
+                yellow: '#fff000',
+                gold: '#fbbf24',
+                light: '#f8f9fa',
+                blue: '#0070F3',
+                accent: '#3b82f6'
+              }
+            },
+            animation: {
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'shake': 'shake 3s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite',
+              'shine': 'shine 3s infinite',
+              'draw-loop': 'draw-loop 3s ease-in-out infinite',
+              'marquee': 'marquee 35s linear infinite',
+            },
+            keyframes: {
+              marquee: {
+                '0%': { transform: 'translateX(0%)' },
+                '100%': { transform: 'translateX(-50%)' }
+              },
+              shake: {
+                '0%, 100%': { transform: 'translate3d(0, 0, 0)' },
+                '10%, 90%': { transform: 'translate3d(-1px, 0, 0)' },
+                '20%, 80%': { transform: 'translate3d(2px, 0, 0)' },
+                '30%, 50%, 70%': { transform: 'translate3d(-4px, 0, 0)' },
+                '40%, 60%': { transform: 'translate3d(4px, 0, 0)' }
+              },
+              shine: {
+                '0%': { left: '-100%', opacity: '0' },
+                '10%': { opacity: '0.5' },
+                '50%': { left: '100%', opacity: '0.5' },
+                '100%': { left: '100%', opacity: '0' }
+              },
+              'draw-loop': {
+                '0%': { strokeDasharray: '1000', strokeDashoffset: '1000', opacity: '0' },
+                '5%': { opacity: '1' },
+                '40%': { strokeDashoffset: '0' },
+                '80%': { strokeDashoffset: '0', opacity: '1' },
+                '100%': { strokeDashoffset: '0', opacity: '0' }
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="/index.css">
+    <style>
+      @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-marquee {
+        display: flex;
+        width: max-content;
+        animation: marquee 35s linear infinite;
+        will-change: transform;
+      }
+      .animate-marquee:hover {
+        animation-play-state: paused;
+      }
+      @media (max-width: 640px) {
+        .animate-marquee {
+          animation-duration: 25s;
+        }
+      }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3"
+  }
+}
+</script>
+  </head>
+  <body class="bg-gray-50 font-sans antialiased text-gray-900 overflow-x-hidden">
+    <!-- Meta Pixel Noscript -->
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2388637345289971&ev=PageView&noscript=1"
+    /></noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
